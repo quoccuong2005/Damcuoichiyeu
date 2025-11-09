@@ -1,0 +1,426 @@
+<div class="wedding-container">
+    <!-- Background decoration -->
+    <div class="bg-decoration">
+        <div class="floating-hearts">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Falling Petals -->
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+
+        <div class="hero-content">
+            <p class="save-the-date">Save The Date</p>
+            <h1 class="couple-names-hero">
+                <%= theme.groom %><span class="ampersand">&</span><%= theme.bride %>
+            </h1>
+            <p class="wedding-date-hero"><%= theme.wedding_date %></p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Ngày</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Giờ</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Phút</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Giây</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Guest Greeting Section (shown only if query param exists) -->
+    <section class="guest-greeting-section" id="guestGreetingSection" style="display: none;">
+        <p class="greeting-text">Kính mời</p>
+        <h2 class="guest-name" id="guestName"></h2>
+        <p>đến dự tiệc cưới của chúng tôi</p>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+        <span class="ornament">❀</span>
+        <i class="fas fa-heart divider-icon"></i>
+        <span class="ornament">❀</span>
+    </div>
+
+    <!-- Invitation Section -->
+    <section class="invitation-section">
+        <div class="section-container">
+            <h2 class="section-title">Thiệp Mời Đám Cưới</h2>
+            <p class="section-subtitle">Sự hiện diện của bạn là niềm vinh hạnh cho gia đình chúng tôi!</p>
+
+            <div class="invitation-card">
+                <div class="couple-names">
+                    <span class="groom-name"><%= theme.groom %></span>
+                    <i class="fas fa-heart heart-icon"></i>
+                    <span class="bride-name"><%= theme.bride %></span>
+                </div>
+
+                <div class="wedding-info">
+                    <div class="info-item">
+                        <i class="far fa-calendar-alt"></i>
+                        <p><strong>Ngày:</strong> <%= theme.wedding_date %></p>
+                    </div>
+
+                    <div style="margin: 30px 0; padding: 20px; background: rgba(255, 255, 255, 0.3); border-radius: 10px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">
+                            <i class="fas fa-rings-wedding"></i> Nhà Trai
+                        </h4>
+                        <div class="info-item">
+                            <i class="far fa-clock"></i>
+                            <p><strong>Thời gian:</strong> <%= theme.groom_time %></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p><%= theme.groom_venue %></p>
+                        </div>
+                        <div class="info-item address">
+                            <a href="https://www.google.com/maps/search/?api=1&query=<%= theme.groom_maps_query %>"
+                       target="_blank"
+                       class="btn btn-secondary"
+                        <i class="fas fa-directions"></i>  <p><%= theme.groom_address %></p>
+                    </a>
+                           
+                        </div>
+                    </div>
+
+                    <div style="margin: 30px 0; padding: 20px; background: rgba(255, 255, 255, 0.3); border-radius: 10px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">
+                            <i class="fas fa-heart"></i> Nhà Dâu
+                        </h4>
+                        <div class="info-item">
+                            <i class="far fa-clock"></i>
+                            <p><strong>Thời gian:</strong> <%= theme.bride_time %></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p><%= theme.bride_venue %></p>
+                        </div>
+                        <div class="info-item address">
+                            <a href="https://www.google.com/maps/search/?api=1&query=<%= theme.bride_maps_query %>"
+                       target="_blank"
+                       class="btn btn-secondary"
+                        <i class="fas fa-directions"></i>  <p><%= theme.bride_address %></p>
+                    </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="invitation-message">
+                    <p>Sự hiện diện của bạn là niềm vinh hạnh cho gia đình chúng tôi!</p>
+                    <p>Rất mong được đón tiếp!</p>
+                </div>
+
+                <div class="signature">
+                    <p>Trân trọng kính mời</p>
+                    <p class="family-names">Gia đình <%= theme.groom %> & <%= theme.bride %></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+        <span class="ornament">❀</span>
+        <i class="fas fa-rings-wedding divider-icon"></i>
+        <span class="ornament">❀</span>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <div class="section-container">
+            <h2 class="section-title">Album Ảnh Cưới</h2>
+            <p class="section-subtitle">Những khoảnh khắc đẹp nhất của chúng tôi</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="/images/BAT05004.jpg" alt="Gallery Image 1">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="/images/BAT05223.jpg" alt="Gallery Image 2">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                       <img src="/images/BAT05126.jpg" alt="Gallery Image 2">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="/images/BAT05185.jpg" alt="Gallery Image 2">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="/images/BAT05240.jpg" alt="Gallery Image 2">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <img src="/images/BAT05252.jpg" alt="Gallery Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+        <span class="ornament">❀</span>
+        <i class="fas fa-heart divider-icon"></i>
+        <span class="ornament">❀</span>
+    </div>
+
+    <!-- Love Story Timeline Section -->
+    <section class="timeline-section">
+        <div class="section-container">
+            <h2 class="section-title">Câu Chuyện Tình Yêu</h2>
+            <p class="section-subtitle">Hành trình của chúng tôi</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">Tháng 1, 2020</p>
+                        <h3 class="timeline-title">Lần Đầu Gặp Gỡ</h3>
+                        <p class="timeline-description">
+                            Chúng tôi gặp nhau lần đầu tiên tại một buổi gặp mặt bạn bè.
+                            Đó là một ngày không thể nào quên!
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">Tháng 6, 2020</p>
+                        <h3 class="timeline-title">Hẹn Hò Đầu Tiên</h3>
+                        <p class="timeline-description">
+                            Buổi hẹn hò đầu tiên tại một quán cà phê nhỏ.
+                            Chúng tôi đã trò chuyện suốt cả buổi chiều.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">Tháng 12, 2022</p>
+                        <h3 class="timeline-title">Lời Cầu Hôn</h3>
+                        <p class="timeline-description">
+                            Một lời cầu hôn lãng mạn dưới ánh nến và hoa hồng.
+                            Đó là khoảnh khắc hạnh phúc nhất!
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">Tháng 12, 2025</p>
+                        <h3 class="timeline-title">Đám Cưới</h3>
+                        <p class="timeline-description">
+                            Chúng tôi sẽ bắt đầu chương mới của cuộc đời
+                            với sự chúc phúc từ gia đình và bạn bè!
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+        <span class="ornament">❀</span>
+        <i class="fas fa-envelope-open-text divider-icon"></i>
+        <span class="ornament">❀</span>
+    </div>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section">
+        <div class="section-container">
+            <h2 class="section-title">Xác Nhận Tham Dự</h2>
+            <p class="section-subtitle">Vui lòng cho chúng tôi biết bạn sẽ đến</p>
+
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="rsvpName">Họ và Tên *</label>
+                    <input type="text" id="rsvpName" name="name" placeholder="Nhập họ tên của bạn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rsvpPhone">Số Điện Thoại *</label>
+                    <input type="tel" id="rsvpPhone" name="phone" placeholder="0123456789" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Bạn có tham dự không? *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="attendYes" name="attendance" value="Có, tôi sẽ đến" required>
+                            <label for="attendYes" style="margin: 0; text-transform: none;">Có, tôi sẽ đến</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="attendNo" name="attendance" value="Rất tiếc, tôi không thể đến">
+                            <label for="attendNo" style="margin: 0; text-transform: none;">Rất tiếc, tôi không thể đến</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rsvpMessage">Lời Nhắn</label>
+                    <textarea id="rsvpMessage" name="message" placeholder="Gửi lời chúc mừng đến cô dâu chú rể..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Gửi Xác Nhận
+                </button>
+
+                <div class="success-message" id="rsvpSuccess">
+                    Cảm ơn bạn đã xác nhận! Chúng tôi rất mong được gặp bạn.
+                </div>
+
+                <div class="error-message" id="rsvpError" style="display: none; background: #fee; color: #c33; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                    Có lỗi xảy ra. Vui lòng thử lại sau.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+        <span class="ornament">❀</span>
+        <i class="fas fa-map-marked-alt divider-icon"></i>
+        <span class="ornament">❀</span>
+    </div>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="section-container">
+            <h2 class="section-title">Địa Điểm Tổ Chức</h2>
+            <p class="section-subtitle">Chúng tôi rất mong được gặp bạn tại đây</p>
+
+            <div class="location-grid">
+                <!-- Nhà Trai -->
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-rings-wedding"></i>
+                    </div>
+                    <h3 class="location-title">Nhà Trai</h3>
+                    <h4 style="font-size: 18px; color: var(--primary-color); margin: 10px 0;"><%= theme.groom_venue %></h4>
+                    <p class="location-address">
+                        <i class="fas fa-map-marker-alt"></i> <%= theme.groom_address %>
+                    </p>
+                    <p class="location-address">
+                        <i class="far fa-clock"></i> <%= theme.groom_time %>
+                    </p>
+                    <p class="location-address">
+                        <i class="fas fa-phone-alt"></i> <%= theme.groom_phone %>
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=<%= theme.groom_maps_query %>"
+                       target="_blank"
+                       class="btn btn-secondary"
+                       style="margin-top: 15px; display: inline-block; padding: 10px 20px; background: var(--primary-color); color: white; text-decoration: none; border-radius: 25px; font-size: 14px;">
+                        <i class="fas fa-directions"></i> Chỉ Đường
+                    </a>
+                </div>
+
+                <!-- Nhà Dâu -->
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="location-title">Nhà Dâu</h3>
+                    <h4 style="font-size: 18px; color: var(--primary-color); margin: 10px 0;"><%= theme.bride_venue %></h4>
+                    <p class="location-address">
+                        <i class="fas fa-map-marker-alt"></i> <%= theme.bride_address %>
+                    </p>
+                    <p class="location-address">
+                        <i class="far fa-clock"></i> <%= theme.bride_time %>
+                    </p>
+                    <p class="location-address">
+                        <i class="fas fa-phone-alt"></i> <%= theme.bride_phone %>
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=<%= theme.bride_maps_query %>"
+                       target="_blank"
+                       class="btn btn-secondary"
+                       style="margin-top: 15px; display: inline-block; padding: 10px 20px; background: var(--primary-color); color: white; text-decoration: none; border-radius: 25px; font-size: 14px;">
+                        <i class="fas fa-directions"></i> Chỉ Đường
+                    </a>
+                </div>
+            </div>
+
+            <!-- Google Maps với 2 markers -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JTHiK7y1NeD_wIB0b0Aiw8nVehIJcHE&ehbc=2E312F" width="2000" height="550"></iframe>
+                <p style="margin-top: 15px; color: var(--text-light); font-size: 14px; text-align: center;">
+                    <i class="fas fa-info-circle"></i> 
+                </p>
+            </div>
+
+            <!-- Alternative: Map với multiple markers (không cần API key) -->
+            <div class="map-links" style="margin-top: 30px; text-align: center;">
+                <a href="https://www.google.com/maps/dir/<%= theme.groom_maps_query %>/<%= theme.bride_maps_query %>"
+                   target="_blank"
+                   class="btn btn-primary"
+                   style="display: inline-block; padding: 12px 30px; margin: 10px;">
+                    <i class="fas fa-map-marked-alt"></i> Xem Lộ Trình Giữa 2 Địa Điểm
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Divider -->
+    <div class="divider">
+        <span class="ornament">❀</span>
+        <i class="fas fa-heart divider-icon"></i>
+        <span class="ornament">❀</span>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--secondary-color); padding: 40px 20px; text-align: center;">
+        <p style="font-family: 'Dancing Script', cursive; font-size: 32px; color: var(--primary-color); margin-bottom: 10px;">
+            <%= theme.groom %> & <%= theme.bride %>
+        </p>
+        <p style="color: var(--text-light); margin-bottom: 5px;">
+            <%= theme.wedding_date %>
+        </p>
+        <p style="color: var(--text-light); margin-bottom: 20px; font-size: 14px;">
+            Nhà Trai: <%= theme.groom_time %> • Nhà Dâu: <%= theme.bride_time %>
+        </p>
+        <p style="color: var(--text-light); font-size: 14px;">
+            Cảm ơn bạn đã ghé thăm thiệp mời của chúng tôi ❤️
+        </p>
+    </footer>
+</div>

@@ -1,0 +1,66 @@
+<div class="admin-container">
+    <div class="admin-card">
+        <div class="admin-header">
+            <h1><i class="fas fa-user-shield"></i> Quản Lý Khách Mời</h1>
+            <p>Tạo và quản lý thiệp mời cá nhân hóa</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="adminPassword">Mật khẩu:</label>
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Nhập mật khẩu admin"
+                    required
+                    autocomplete="current-password"
+                >
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-sign-in-alt"></i> Đăng nhập
+            </button>
+            <div class="error-message" id="errorMessage"></div>
+            <div style="margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 8px; font-size: 14px; color: #856404;">
+                <strong>Mật khẩu mặc định:</strong> admin123<br>
+                <em>Bạn có thể thay đổi mật khẩu trong file main.js</em>
+            </div>
+        </form>
+
+        <!-- Admin Panel (hidden by default) -->
+        <div id="adminPanel">
+            <!-- Add Guest Form -->
+            <form id="addGuestForm">
+                <div class="form-group">
+                    <label for="guestName">
+                        <i class="fas fa-user-plus"></i> Tên Khách Mời:
+                    </label>
+                    <input
+                        type="text"
+                        id="guestName"
+                        placeholder="Ví dụ: Nguyễn Văn A"
+                        required
+                        autocomplete="off"
+                    >
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus-circle"></i> Thêm Khách Mời
+                </button>
+                <div class="success-message" id="successMessage"></div>
+            </form>
+
+            <!-- Guest List -->
+            <div class="guest-list">
+                <h3><i class="fas fa-list-ul"></i> Danh Sách Khách Mời</h3>
+                <div id="guestListContainer">
+                    <!-- Guest items will be dynamically added here -->
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <button id="logoutBtn" class="btn btn-secondary">
+                <i class="fas fa-sign-out-alt"></i> Đăng xuất
+            </button>
+        </div>
+    </div>
+</div>

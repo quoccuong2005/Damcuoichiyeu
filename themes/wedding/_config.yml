@@ -1,0 +1,23 @@
+# Theme configuration
+menu:
+  Home: /
+  Admin: /admin/
+
+# Wedding information
+groom: Mạnh
+bride: Huyền
+wedding_date: "2025-12-25"
+
+# Groom's venue (Nhà Trai)
+groom_venue: ""
+groom_address: "Khu 5 thôn Bỉnh Ri xã Hợp Lý"
+groom_time: "10:00 AM"
+groom_phone: "0889022070"
+groom_maps_query: "21°29'47.7\"N 105°29'28.6\"E"
+
+# Bride's venue (Nhà Dâu)
+bride_venue: ""
+bride_address: "Khu 4 thôn Thành Công, Triệu Đề, Lập Thạch"
+bride_time: "6:00 PM"
+bride_phone: "0865178377"
+bride_maps_query: "21.339165794424485, 105.4691130683258"

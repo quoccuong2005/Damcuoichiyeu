@@ -10,7 +10,7 @@
     // ====================================
     function initCountdown() {
         // Set wedding date - Change this to your actual wedding date
-        const weddingDate = new Date('2025-12-25T10:00:00').getTime();
+        const weddingDate = new Date('2026-01-25T10:00:00').getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();

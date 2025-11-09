@@ -170,38 +170,128 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px 20px;
 }
 
-/* Falling Petals Animation */
+/* Floral Decorations - Real Flower Images */
 .petal {
     position: absolute;
-    top: -10%;
-    width: 10px;
-    height: 10px;
-    background: rgba(224, 127, 7, 0.6);
-    border-radius: 50% 0 50% 0;
-    animation: fall linear infinite;
     pointer-events: none;
-    z-index: 1;
+    z-index: 3;
 }
 
-.petal:nth-child(1) { left: 10%; animation-duration: 8s; animation-delay: 0s; }
-.petal:nth-child(2) { left: 20%; animation-duration: 10s; animation-delay: 1s; background: rgba(232, 59, 48, 0.5); }
-.petal:nth-child(3) { left: 30%; animation-duration: 9s; animation-delay: 2s; }
-.petal:nth-child(4) { left: 40%; animation-duration: 11s; animation-delay: 0.5s; background: rgba(224, 127, 7, 0.5); }
-.petal:nth-child(5) { left: 50%; animation-duration: 9.5s; animation-delay: 1.5s; }
-.petal:nth-child(6) { left: 60%; animation-duration: 10.5s; animation-delay: 2.5s; background: rgba(232, 59, 48, 0.4); }
-.petal:nth-child(7) { left: 70%; animation-duration: 8.5s; animation-delay: 3s; }
-.petal:nth-child(8) { left: 80%; animation-duration: 9.8s; animation-delay: 0.8s; background: rgba(224, 127, 7, 0.4); }
-.petal:nth-child(9) { left: 90%; animation-duration: 10.2s; animation-delay: 1.8s; }
-.petal:nth-child(10) { left: 15%; animation-duration: 11.5s; animation-delay: 2.2s; background: rgba(232, 59, 48, 0.6); }
+/* Top Left Floral Corner - Pink Roses */
+.petal:nth-child(1) {
+    top: -15px;
+    left: -15px;
+    width: 100px;
+    height: 100px;
+    background: url('../images/Asset\ 3.png') no-repeat;
+    background-size: contain;
+    background-position: top left;
+    opacity: 0.9;
+    animation: floatFlower 6s ease-in-out infinite;
+    filter: drop-shadow(0 3px 10px rgba(224, 127, 7, 0.25));
+}
 
-@keyframes fall {
-    0% {
-        transform: translateY(0) rotate(0deg);
+/* Top Right Flower Decoration */
+.petal:nth-child(2) {
+    top: -10px;
+    right: -10px;
+    width: 200px;
+    height: 200px;
+    background: url('../images/Asset\ 2.png') no-repeat;
+    background-size: contain;
+    background-position: top right;
+    opacity: 0.85;
+    animation: floatFlower 7s ease-in-out infinite;
+    animation-delay: 0.5s;
+    filter: drop-shadow(0 3px 10px rgba(232, 59, 48, 0.25));
+}
+
+/* Bottom Left Decoration - Watercolor Flowers */
+.petal:nth-child(3) {
+    bottom: -15px;
+    left: -15px;
+    width: 210px;
+    height: 210px;
+    background: url('../images/Asset\ 1.png') no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    opacity: 0.88;
+    animation: floatFlower 8s ease-in-out infinite reverse;
+    filter: drop-shadow(0 3px 10px rgba(255, 46, 92, 0.25));
+}
+
+/* Bottom Right Floral Corner - Rose Bouquet */
+.petal:nth-child(4) {
+    bottom: -15px;
+    right: -15px;
+    width: 100px;
+    height: 100px;
+    background: url('../images/Asset\ 3.png') no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    opacity: 0.87;
+    animation: floatFlower 7.5s ease-in-out infinite;
+    animation-delay: 1s;
+    filter: drop-shadow(0 3px 10px rgba(224, 127, 7, 0.3));
+}
+
+/* Heart decorations - Romantic floating hearts */
+.petal:nth-child(5) {
+    top: 12%;
+    left: 28%;
+    font-size: 35px;
+    color: rgba(255, 105, 180, 0.4);
+    animation: floatHeart 5s ease-in-out infinite;
+    filter: drop-shadow(0 0 8px rgba(255, 105, 180, 0.5));
+}
+
+.petal:nth-child(6) {
+    bottom: 18%;
+    right: 28%;
+    font-size: 32px;
+    color: rgba(255, 20, 147, 0.35);
+    animation: floatHeart 6s ease-in-out infinite 2s;
+    filter: drop-shadow(0 0 8px rgba(255, 20, 147, 0.4));
+}
+
+.petal:nth-child(7) {
+    top: 45%;
+    right: 8%;
+    font-size: 34px;
+    color: rgba(255, 182, 193, 0.35);
+    animation: floatHeart 5.5s ease-in-out infinite 1s;
+    filter: drop-shadow(0 0 7px rgba(255, 182, 193, 0.4));
+}
+
+.petal:nth-child(8) {
+    bottom: 40%;
+    left: 10%;
+    font-size: 33px;
+    color: rgba(255, 105, 180, 0.38);
+    animation: floatHeart 6.5s ease-in-out infinite 3s;
+    filter: drop-shadow(0 0 8px rgba(255, 105, 180, 0.45));
+}
+
+
+@keyframes floatFlower {
+    0%, 100% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 0.85;
+    }
+    50% {
+        transform: translateY(-25px) scale(1.05) rotate(3deg);
         opacity: 1;
     }
-    100% {
-        transform: translateY(110vh) rotate(360deg);
-        opacity: 0;
+}
+
+@keyframes floatHeart {
+    0%, 100% {
+        transform: translateY(0) scale(1) rotate(-5deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.15) rotate(5deg);
+        opacity: 0.7;
     }
 }
 
@@ -1040,8 +1130,13 @@ h1, h2, h3, h4, h5, h6 {
    Responsive Design
    ==================================== */
 @media (max-width: 768px) {
+    /* Hide flower decorations on mobile for better performance */
+    .petal {
+        display: none !important;
+    }
+
     .hero-section {
-        background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1080&auto=format&fit=crop');
+        background-image: url('../images/BAT05004.jpg');
         background-size: cover;
         background-position: center center;
         background-attachment: scroll;

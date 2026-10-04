@@ -1,26 +1,121 @@
 <!DOCTYPE html>
 <html lang="<%= config.language %>">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= config.title %></title>
+    <title>
+        <%= config.title %>
+    </title>
     <meta name="description" content="<%= config.description %>">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Romantic Warmth Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Theme CSS -->
     <%- css('css/style') %>
+        <script src="/js/qrcode.min.js"></script>
 </head>
+
 <body>
+    <!-- Background Music -->
+    <audio id="weddingMusic" loop>
+        <source src="/music/damcuoi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Control removed as requested -->
+
+    <!-- ✨ Premium Invitation Opening Experience ✨ -->
+    <div class="grand-invitation" id="grandInvitation">
+        <!-- Floating golden particles background -->
+        <div class="particles-container" id="particlesContainer"></div>
+
+        <!-- Ambient light glow -->
+        <div class="ambient-glow"></div>
+
+        <!-- Main invitation scene -->
+        <div class="invitation-stage">
+            <!-- Elegant Envelope -->
+            <div class="luxury-envelope" id="luxuryEnvelope">
+                <!-- Envelope shadow -->
+                <div class="envelope-shadow"></div>
+
+                <!-- Envelope body -->
+                <div class="envelope-body-3d">
+                    <div class="envelope-back-panel"></div>
+                    <div class="envelope-inner-panel"></div>
+                    <div class="envelope-flap-3d">
+                        <div class="flap-inner"></div>
+                    </div>
+                    <div class="envelope-front-panel">
+                        <!-- Wax seal -->
+                        <div class="wax-seal">
+                            <span class="seal-text"><%= theme.groom.charAt(0) %>&amp;<%= theme.bride.charAt(0) %></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Opening Card (animation only) -->
+            <div class="opening-card" id="openingCard">
+                <div class="card-glow"></div>
+                <div class="card-frame">
+                    <div class="card-border-ornament top-left"></div>
+                    <div class="card-border-ornament top-right"></div>
+                    <div class="card-border-ornament bottom-left"></div>
+                    <div class="card-border-ornament bottom-right"></div>
+
+                    <div class="card-body">
+                        <div class="flourish-top">❧</div>
+                        <p class="card-prelude">Trân trọng kính mời</p>
+                        <h1 class="couple-names">
+                            <span class="name-groom">
+                                <%= theme.groom %>
+                            </span>
+                            <span class="name-ampersand">&</span>
+                            <span class="name-bride">
+                                <%= theme.bride %>
+                            </span>
+                        </h1>
+                        <div class="wedding-date-display">
+                            <div class="date-line"></div>
+                            <span class="date-text">
+                                <%= theme.wedding_date %>
+                            </span>
+                            <div class="date-line"></div>
+                        </div>
+                        <p class="card-message">Hân hạnh được đón tiếp</p>
+                        <div class="flourish-bottom">❧</div>
+                    </div>
+                </div>
+                <div class="shimmer-effect"></div>
+            </div>
+
+            <!-- Call to action -->
+            <div class="cta-container" id="ctaContainer">
+                <div class="cta-hearts">
+                    <span>💕</span>
+                </div>
+                <p class="cta-text">Chạm để mở thiệp cưới</p>
+                <div class="cta-arrow">
+                    <span>↓</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <%- body %>
 
-    <!-- Theme JS -->
-    <%- js('js/main') %>
+        <!-- Theme JS -->
+        <%- js('js/main') %>
 </body>
+
 </html>

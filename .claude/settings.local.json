@@ -1,9 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dir \"c:\\Users\\Admin\\Downloads\\manhvahuyen.com\" /A)",
-      "Bash(npm install:*)",
-      "Bash(hexo init:*)"
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

@@ -4,20 +4,57 @@ menu:
   Admin: /admin/
 
 # Wedding information
-groom: Mạnh
-bride: Huyền
-wedding_date: "2026-01-25"
+groom: Giáp
+groom_full: Thế Giáp
+groom_avatar: "/images/photo24.jpg"
+bride: Hương
+bride_full: Lan Hương
+bride_avatar: "/images/photo1.jpg"
+wedding_date: "2026-11-29"
 
-# Groom's venue (Nhà Trai)
-groom_venue: ""
-groom_address: "Khu 5 thôn Bỉnh Ri xã Hợp Lý"
-groom_time: "10:00 AM"
-groom_phone: "0889022070"
-groom_maps_query: "21°29'47.7\"N 105°29'28.6\"E"
+# Groom's Parents (Nhà Trai)
+groom_father: Đoàn Văn Thúy
+groom_mother: Hoàng Thị Liễu
 
-# Bride's venue (Nhà Dâu)
-bride_venue: ""
-bride_address: "Khu 4 thôn Thành Công, Triệu Đề, Lập Thạch"
-bride_time: "6:00 PM"
-bride_phone: "0865178377"
-bride_maps_query: "21.339165794424485, 105.4691130683258"
+# Bride's Parents (Nhà Gái)
+bride_father: Nguyễn Quốc Đạt
+bride_mother: Nguyễn Thị Phương Lan
+
+# Groom's venue (Nhà Trai) - Lễ Thành Hôn
+groom_venue: "Tư Gia Nhà Trai"
+groom_address: "Thôn Hải Nhuận , Xã Hải Hưng, Tỉnh Ninh Bình"
+groom_date: "29.11.2026"
+groom_date_lunar: "Tức ngày 21 tháng 10 năm Bính Ngọ"
+groom_day: "Chủ Nhật"
+groom_time: "09:00"
+groom_phone: "0342287733"
+groom_maps_query: "20.1850138, 106.3327545"
+groom_ceremony: "Lễ Thành Hôn"
+
+# Bride's venue (Nhà Gái) - Lễ Vu Quy
+bride_venue: "Tư Gia Nhà Gái"
+bride_address: "Nội Cốc, Tam Chúc, Ninh Bình, Việt Nam"
+bride_date: "29.11.2026"
+bride_date_lunar: "Tức ngày 21 tháng 10 năm Bính Ngọ"
+bride_day: "Chủ Nhật"
+bride_time: "09:00"
+bride_phone: "0855061757"
+bride_maps_query: "20.5500000, 105.8125269"
+bride_ceremony: "Lễ Vu Quy"
+
+# Wedding Reception (Tiệc Cưới) - 25/01
+# Nhà Trai
+groom_reception_venue: "Tư Gia Nhà Trai"
+groom_reception_address: "Thôn Hải Nhuận , Xã Hải Hưng, Tỉnh Ninh Bình"
+groom_reception_date: "28.11.2026"
+groom_reception_date_lunar: "Tức ngày 20 tháng 10 năm Bính Ngọ"
+groom_reception_day: "Thứ Bảy"
+groom_reception_time: "16:00"
+
+# Nhà Gái
+bride_reception_venue: "Tư Gia Nhà Gái"
+bride_reception_address: "Nội Cốc, Tam Chúc, Ninh Bình, Việt Nam"
+bride_reception_date: "28.11.2026"
+bride_reception_date_lunar: "Tức ngày 20 tháng 10 năm Bính Ngọ"
+bride_reception_day: "Thứ Bảy"
+bride_reception_time: "16:00"

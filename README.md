@@ -23,7 +23,7 @@ Website thiệp cưới đẹp mắt được xây dựng bằng Hexo, với kh�
 ```bash
 npm install
 ```
-
+hi
 ### 2. Chạy server local
 ```bash
 npm run server

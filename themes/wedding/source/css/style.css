@@ -711,7 +711,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/hero.PNG');
+    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center 24%;
     background-attachment: fixed;
@@ -1516,7 +1516,7 @@ h4 {
    ==================================== */
 .timeline-section {
     padding: var(--spacing-xl) 20px;
-    background-image: url('../images/invitation.jpg');
+    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center 40%;
     background-attachment: fixed;

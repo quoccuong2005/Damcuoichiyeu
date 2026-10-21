@@ -408,7 +408,7 @@
                                 <img src="/images/photo9.jpg" alt="Wedding Photo 9">
                                 <div class="story-bubble">
                                     <div class="bubble-content">
-                                        <span class="bubble-date">2025</span>
+                                        <span class="bubble-date">2026</span>
                                         <span class="bubble-title">Khoảnh Khắc Đẹp</span>
                                         <span class="bubble-text">Những khoảnh khắc hạnh phúc bên nhau,
                                             lưu giữ mãi trong tim.</span>
@@ -479,12 +479,12 @@
     <section class="gallery-section">
         <div class="section-container">
             <h2 class="section-title">Album Ảnh Cưới</h2>
-            <p class="section-subtitle">57 khoảnh khắc trong album của chúng tôi</p>
+            <p class="section-subtitle">45 khoảnh khắc trong album của chúng tôi</p>
 
             <!-- Carousel Container -->
             <div class="photo-carousel" id="photoCarousel">
                 <div class="carousel-track" id="carouselTrack">
-                    <% for (let index = 1; index <= 57; index += 1) { %>
+                    <% for (let index = 1; index <= 45; index += 1) { %>
                         <div class="carousel-slide">
                             <img src="/images/photo<%= index %>.jpg" alt="Ảnh cưới <%= index %>"
                                 loading="<%= index === 1 ? 'eager' : 'lazy' %>" decoding="async">
@@ -506,7 +506,7 @@
 
             <!-- Carousel Thumbnails -->
             <div class="carousel-thumbnails" id="carouselThumbnails">
-                <% for (let index = 1; index <= 57; index += 1) { %>
+                <% for (let index = 1; index <= 45; index += 1) { %>
                     <div class="thumb-item<%= index === 1 ? ' active' : '' %>" data-index="<%= index - 1 %>">
                         <img src="/images/photo<%= index %>.jpg" alt="Ảnh thu nhỏ <%= index %>" loading="lazy"
                             decoding="async">

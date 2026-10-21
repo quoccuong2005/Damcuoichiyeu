@@ -33,7 +33,7 @@ groom_ceremony: "Lễ Thành Hôn"
 
 # Bride's venue (Nhà Gái) - Lễ Vu Quy
 bride_venue: "Tư Gia Nhà Gái"
-bride_address: "Nội Cốc, Tam Chúc, Ninh Bình, Việt Nam"
+bride_address: "Tổ 3, Tam Chúc, Ninh Bình, Việt Nam"
 bride_date: "29.11.2026"
 bride_date_lunar: "Tức ngày 21 tháng 10 năm Bính Ngọ"
 bride_day: "Chủ Nhật"
@@ -46,14 +46,14 @@ bride_ceremony: "Lễ Vu Quy"
 # Nhà Trai
 groom_reception_venue: "Tư Gia Nhà Trai"
 groom_reception_address: "Thôn Hải Nhuận , Xã Hải Hưng, Tỉnh Ninh Bình"
-groom_reception_date: "28.11.2026"
-groom_reception_date_lunar: "Tức ngày 20 tháng 10 năm Bính Ngọ"
-groom_reception_day: "Thứ Bảy"
-groom_reception_time: "16:00"
+groom_reception_date: "29.11.2026"
+groom_reception_date_lunar: "Tức ngày 21 tháng 10 năm Bính Ngọ"
+groom_reception_day: "Chủ Nhật"
+groom_reception_time: "10:00"
 
 # Nhà Gái
 bride_reception_venue: "Tư Gia Nhà Gái"
-bride_reception_address: "Nội Cốc, Tam Chúc, Ninh Bình, Việt Nam"
+bride_reception_address: "Tổ 3, Tam Chúc, Ninh Bình, Việt Nam"
 bride_reception_date: "28.11.2026"
 bride_reception_date_lunar: "Tức ngày 20 tháng 10 năm Bính Ngọ"
 bride_reception_day: "Thứ Bảy"

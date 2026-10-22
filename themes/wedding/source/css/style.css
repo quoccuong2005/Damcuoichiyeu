@@ -234,8 +234,8 @@
 
 /* Heart Seal - matching rose theme */
 .wax-seal {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     background: radial-gradient(circle at 35% 35%, #D4A5A5 0%, #BC8F8F 50%, #A67B7B 100%);
     border-radius: 50%;
     display: flex;
@@ -251,7 +251,8 @@
 }
 
 .seal-text {
-    font-size: 22px;
+    font-size: 18px;
+     font-family: 'Great Vibes', cursive;
 }
 
 .luxury-envelope.opening .wax-seal {
@@ -538,12 +539,13 @@
     }
 
     .wax-seal {
-        width: 45px;
-        height: 45px;
+        width: 62px;
+        height: 62px;
     }
 
     .seal-text {
         font-size: 18px;
+        
     }
 
     .cta-text {
